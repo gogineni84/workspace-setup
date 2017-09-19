@@ -1,9 +1,8 @@
 
-# EDS Identity Management Git Standards
 ##### These repository guidelines should be followed when working on any EDS Identity Management application.
 ##### For any questions regarding these, please reach out to your tech lead.
 
-## Master 
+### Master 
   **Name:** master
     
   **Purpose:** Represents the current state of PROD
@@ -20,7 +19,7 @@
     2. **v9.1.17** for the first September 2017 off-schedule release
     3. **v10.2.17** for the second October 2017 off-schedule release
 
-## Develop
+### Develop
   **Name:** develop
     
   **Purpose:** Represents merged, stable "release candidate" code (similar to SVN trunk)
@@ -29,7 +28,7 @@
   + This will *never* be developed against directly
   + This will *never* be deleted
 
-## Project Branches
+### Project Branches
   **Name:** 
   + *convention:* **project/[short-description]**
   + *example:* 
@@ -43,7 +42,7 @@
   + These will be developed against (via **[feature](#feature-branches)** branches) during the standard DDIT cycle.
   + These will be deleted on a case-by-cases basis, sometime after release.
 
-## Release Branches
+### Release Branches
   **Name:** 
   + *convention:* **release/[year]/[number]**
   + *example:* 
@@ -58,7 +57,7 @@
   + These will be merged to **[develop](#develop)** with each change (ie: a System Test defect fix).
   + These will be deleted on a case-by-cases basis, sometime after release.
 
-## Feature Branches
+### Feature Branches
   **Name:** 
   + *convention:* 
     1. **feature/rtc/[RTC number]**
@@ -79,7 +78,7 @@
 	+ These will be merged to **[master](#master)** and **[develop](#develop)** before being deployed.
 	+ These will be deleted after being verified post-deployment.
 
-## Hotfix Branches
+### Hotfix Branches
   **Name:** 
   + *convention:* **hotfix/[short-description]**
   + *example:* **hotfix/claims-link-change**
@@ -96,7 +95,7 @@
 	+ These will be merged to **[master](#master)** and **[develop](#develop)** before being deployed.
 	+ These will be deleted after being verified post-deployment.
 
-## Externalized Property Files
+### Externalized Property Files
   **Purpose:** Repositories separate from application code to handle data sensitive to the application, such as passwords
   
   **Name:**
