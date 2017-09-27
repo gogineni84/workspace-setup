@@ -1,6 +1,6 @@
 # General Log Standards
-| #    | Requirement   | Complete?   |
-|------|---------------|-------------|
+|_#_   |_Requirement:_   |_Complete?_   |
+|:------|:---------------|:-------------|
 | 1    | Log with nationwide JSON logging appender: "json-event-layout"  -->  Library for logging in JSON               |     □       |
 | 2    | Mask all confidential data that gets written to logs.              |     □       |
 | 3    | Log every Request the application sends and receives (i.e. outbound ECIF requests, outbound PBS requests, inbound PPS requests, etc.).              |     □       |
