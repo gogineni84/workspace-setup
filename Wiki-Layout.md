@@ -16,7 +16,7 @@
 * [Postman Artifacts]()  
 
 # Operations  
-* [[APIGEE Proxy]]  
+* [[APIGEE/SOA Proxy]]  
 * [[Consumer List]]  
 * [[Endpoints]]  
 * [[Logging]]  
