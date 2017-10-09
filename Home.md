@@ -1,4 +1,5 @@
 Welcome to the EDS-Apps wiki!
+
 ## Application List:
 <details><summary>Bank Rates</summary><p>
 
@@ -70,6 +71,15 @@ Welcome to the EDS-Apps wiki!
 |Application Name  |APRM ID|Wiki                                                                 |Codebase                                                        |
 |:----------------:|:-----:|:-------------------------------------------------------------------:|:--------------------------------------------------------------:|
 |Contact Us        |497    |[Contact Us Wiki](https://github.nwie.net/Nationwide/Contact-Us/wiki)|[Contact Us Code](https://github.nwie.net/Nationwide/Contact-Us)|
+
+</p></details>
+
+<details><summary>Detour</summary><p>
+
+|Application Name   |APRM ID|Wiki                                                                        |Codebase                                                               |
+|:-----------------:|:-----:|:--------------------------------------------------------------------------:|:---------------------------------------------------------------------:|
+|Detour Web Services|N/A    |[Detour WS Wiki](https://github.nwie.net/Nationwide/detour/wiki)            |[Detour WS Code](https://github.nwie.net/Nationwide/detour)            |
+|Detour InnerCircle |N/A    |[Detour IC Wiki](https://github.nwie.net/Nationwide/detour-innercircle/wiki)|[Detour IC Code](https://github.nwie.net/Nationwide/detour-innercircle)|
 
 </p></details>
 
