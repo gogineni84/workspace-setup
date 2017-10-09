@@ -49,3 +49,11 @@ Welcome to the EDS-Apps wiki!
 |Common Crypto Service |N/A    |[Common Crypto Service Wiki](https://github.nwie.net/Nationwide/common-crypto-serivce/wiki)|[Common Crypto Service Code](https://github.nwie.net/Nationwide/common-crypto-serivce)|
 
 </p></details>
+
+<details><summary>OMS</summary><p>
+
+|Application Name|APRM ID|Wiki                                                   |Codebase                                          |
+|:--------------:|:-----:|:-----------------------------------------------------:|:------------------------------------------------:|
+|OMS             |3056   |[OMS Wiki](https://github.nwie.net/Nationwide/oms/wiki)|[OMS Code](https://github.nwie.net/Nationwide/oms)|
+
+</p></details>
