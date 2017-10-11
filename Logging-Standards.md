@@ -1,16 +1,16 @@
 # General Log Standards
-|_#_   |_Requirement:_   |_Complete?_   |
-|:------|:---------------|:-------------|
-| 1    | Log with nationwide JSON logging appender: "json-event-layout"  -->  Library for logging in JSON               |     □       |
-| 2    | Mask all confidential data that gets written to logs.              |     □       |
-| 3    | Log every Request the application sends and receives (i.e. outbound ECIF requests, outbound PBS requests, inbound PPS requests, etc.).              |     □       |
-| 4    | Log every Response the application sends and receives (i.e. Responses from ECIF, PBS calls or responses sent from PPS requests, etc.).              |     □       |
-| 5    | Log SQL statements that get executed by the application. Include the database, schema, and username that the call is using.              |     □       |
-| 6    | Have a unique identifier to follow a user/batch job through their session to completion throughout applications. Add this identifier every place it is available. We will want to monitor a user through their session or a batch job through its processing.              |     □       |
-| 7    | Have an identifier that logs where a user/batch job is at in the application. This will help us identify what place in an application a user/job is interacting with. It can also help us tell where errors/data issues are experienced to help track down root cause for incidents. <ul><li>App specific.</li> <li>Have a unique identifier in mdc, as long as it does not cause threading issues.</li> <li>See below</li></ul>              |     □       |
-| 8    | Clean up “allowed” exceptions and print them as informational or warnings (i.e. an invalid username/password for a user logging in is not an application failure so it should be informational).<ul><li>Define the difference between warning, errors, and informational exceptions.</li> <li>See below</li></ul>              |     □       |
-| 9    | Refrain from using keywords such as “error” and “exception” unless there was an exception (i.e. avoid saying “no error occurred” and instead use “successful”).              |     □       |
-| 10   | Break out logs into a location other than the SystemOut.log. SystemOut.log is owned by Java Hosting and having our own logging space will be beneficial to our teams.              |     □       |
+|_#_   |_Requirement:_   |
+|:------|:---------------|
+| 1    | Log with nationwide JSON logging appender: "json-event-layout"  -->  Library for logging in JSON               |
+| 2    | Mask all confidential data that gets written to logs.              |
+| 3    | Log every Request the application sends and receives (i.e. outbound ECIF requests, outbound PBS requests, inbound PPS requests, etc.).              |
+| 4    | Log every Response the application sends and receives (i.e. Responses from ECIF, PBS calls or responses sent from PPS requests, etc.).              |
+| 5    | Log SQL statements that get executed by the application. Include the database, schema, and username that the call is using.              |
+| 6    | Have a unique identifier to follow a user/batch job through their session to completion throughout applications. Add this identifier every place it is available. We will want to monitor a user through their session or a batch job through its processing.              |
+| 7    | Have an identifier that logs where a user/batch job is at in the application. This will help us identify what place in an application a user/job is interacting with. It can also help us tell where errors/data issues are experienced to help track down root cause for incidents. <ul><li>App specific.</li> <li>Have a unique identifier in mdc, as long as it does not cause threading issues.</li> <li>See below</li></ul>              |
+| 8    | Clean up “allowed” exceptions and print them as informational or warnings (i.e. an invalid username/password for a user logging in is not an application failure so it should be informational).<ul><li>Define the difference between warning, errors, and informational exceptions.</li> <li>See below</li></ul>              |
+| 9    | Refrain from using keywords such as “error” and “exception” unless there was an exception (i.e. avoid saying “no error occurred” and instead use “successful”).              |
+| 10   | Break out logs into a location other than the SystemOut.log. SystemOut.log is owned by Java Hosting and having our own logging space will be beneficial to our teams.              |
 
 
 # Standard #7
