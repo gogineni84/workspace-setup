@@ -98,11 +98,20 @@ Welcome to the EDS-Apps wiki!
 
 </p></details>
 
+<details><summary>IAM Batch</summary><p>
+
+|Application Name |APRM ID|Wiki                                                                |Codebase                                                     |
+|:---------------:|:-----:|:------------------------------------------------------------------:|:-----------------------------------------------------------:|
+|IAM Batch        |6664   |[IAM Batch Wiki](https://github.nwie.net/Nationwide/iam-batch/wiki)|[IAM Batch Code](https://github.nwie.net/Nationwide/iam-batch)|
+
+</p></details>
+
 <details><summary>IAM Web Services</summary><p>
 
-|Application Name |APRM ID|Wiki                                                                   |Codebase                                                          |
-|:---------------:|:-----:|:---------------------------------------------------------------------:|:----------------------------------------------------------------:|
-|IAM Web Services |6086   |[IAM Web Services Wiki](https://github.nwie.net/Nationwide/iam-ws/wiki)|[IAM Web Services Code](https://github.nwie.net/Nationwide/iam-ws)|
+|Application Name     |APRM ID|Wiki                                                                                  |Codebase                                                                         |
+|:-------------------:|:-----:|:------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
+|IAM Web Services     |6086   |[IAM Web Services Wiki](https://github.nwie.net/Nationwide/iam-ws/wiki)               |[IAM Web Services Code](https://github.nwie.net/Nationwide/iam-ws)               |
+|IAM WS Migration Tool|N/A    |[IAM WS Migration Tool Wiki](https://github.nwie.net/Nationwide/iam-ws-migration/wiki)|[IAM WS Migration Tool Code](https://github.nwie.net/Nationwide/iam-ws-migration)|
 
 </p></details>
 
@@ -121,14 +130,25 @@ Welcome to the EDS-Apps wiki!
 |IAM Authorization Services|6651   |[IAM Authorization Services Wiki](https://github.nwie.net/Nationwide/iam-authz-ws/wiki)        |[IAM Authorization Services Code](https://github.nwie.net/Nationwide/iam-authz-ws)        |
 |IAM Authorization Center  |6670   |[IAM Authorization Center Wiki](https://github.nwie.net/Nationwide/authorization-center/wiki)  |[IAM Authorization Center Code](https://github.nwie.net/Nationwide/authorization-center)  |
 |MUA Permissions Blender   |N/A    |[MUA Permissions Blender Wiki](https://github.nwie.net/Nationwide/mua-permissions-blender/wiki)|[MUA Permissions Blender Code](https://github.nwie.net/Nationwide/mua-permissions-blender)|
+|Multi User API            |N/A    |[Mutlie User Api Wiki](https://github.nwie.net/Nationwide/multi-user-api/wiki)                 |[Multi User API Code](https://github.nwie.net/Nationwide/multi-user-api)                  |
+|MUA API Client            |N/A    |[MUA API Client Wiki](https://github.nwie.net/Nationwide/mua-api-client/wiki)                  |[MUA API Client Code](https://github.nwie.net/Nationwide/mua-api-client)                  |
+
+</p></details>
+
+<details><summary>NW Utility</summary><p>
+
+|Application Name |APRM ID|Wiki                                                                 |Codebase                                                        |
+|:---------------:|:-----:|:-------------------------------------------------------------------:|:--------------------------------------------------------------:|
+|NW Utility       |3176   |[NW Utility Wiki](https://github.nwie.net/Nationwide/nw-utility/wiki)|[NW Utility Code](https://github.nwie.net/Nationwide/nw-utility)|
 
 </p></details>
 
 <details><summary>OMS</summary><p>
 
-|Application Name|APRM ID|Wiki                                                   |Codebase                                          |
-|:--------------:|:-----:|:-----------------------------------------------------:|:------------------------------------------------:|
-|OMS             |3056   |[OMS Wiki](https://github.nwie.net/Nationwide/oms/wiki)|[OMS Code](https://github.nwie.net/Nationwide/oms)|
+|Application Name|APRM ID|Wiki                                                               |Codebase                                                      |
+|:--------------:|:-----:|:-----------------------------------------------------------------:|:------------------------------------------------------------:|
+|OMS             |3056   |[OMS Wiki](https://github.nwie.net/Nationwide/oms/wiki)            |[OMS Code](https://github.nwie.net/Nationwide/oms)            |
+|SMS Batch       |3056   |[SMS Batch Wiki](https://github.nwie.net/Nationwide/sms-batch/wiki)|[SMS Batch Code](https://github.nwie.net/Nationwide/sms-batch)|
 
 </p></details>
 
