@@ -50,7 +50,7 @@ Important business process has finished. In ideal world, administrator or advanc
 and quickly find out what the application is doing. For example, transitioning through a workflow, incoming/outgoing api responses. Other definition of INFO 
 message: each action that changes the state of the application significantly (database update, external system request).
 * DEBUG
-Result of internal logic that helps developers understand what is happening.
+Result of internal logic that helps developers understand what is happening.  Is about anything that happens in the program.
 * TRACE
 Very detailed information, intended only for development. You might keep trace messages for a short period of time after deployment 
 on production environment, but treat these log statements as temporary, that should or might be turned-off eventually. 
