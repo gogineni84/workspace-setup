@@ -1,7 +1,7 @@
 # General Log Standards
 |_#_   |_Requirement:_   |
 |:------|:---------------|
-| 1    | Log with nationwide JSON logging appender: "json-event-layout"  -->  Library for logging in JSON               |
+| 1    | All appenders should have the following configuration (unless otherwise specified/approved):<br/><ul><li>_Type:_  RollingFileAppender</li><li>_Max File Size:_  250MB</li><li>_Max Backups:_  2</li><li>_Layout:_  com.nationwide.common.logging.JSONEventLayout</li></ul>               |
 | 2    | Mask all confidential data that gets written to logs.              |
 | 3    | Log every Request the application sends and receives (i.e. outbound ECIF requests, outbound PBS requests, inbound PPS requests, etc.).              |
 | 4    | Log every Response the application sends and receives (i.e. Responses from ECIF, PBS calls or responses sent from PPS requests, etc.).              |
