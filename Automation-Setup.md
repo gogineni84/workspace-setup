@@ -1,4 +1,4 @@
-# Preference-Center-API-Test-Automation
+# JRuby and Ruby Setup
 
 This Automation suite runs on JRuby. Please refer to [TSB Approved](https://nwproduction.service-now.com/tsb/standard_technology.do) technologies.
 ## Installing Java
