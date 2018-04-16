@@ -98,14 +98,6 @@ Welcome to the EDS-Apps wiki!
 
 </p></details>
 
-<details><summary>Postal Batch</summary><p>
-
-|Application Name    |APRM ID|Wiki                                                                |Codebase                                                     |
-|:------------------:|:-----:|:--------------------------------------------------------------------:|:-----------------------------------------------------------:|
-|Postal Batch        |6666   |[Postal Batch Wiki](https://github.nwie.net/Nationwide/iam-batch/wiki)|[Postal Batch Code](https://github.nwie.net/Nationwide/iam-batch)|
-
-</p></details>
-
 <details><summary>IAM Web Services</summary><p>
 
 |Application Name     |APRM ID|Wiki                                                                               |Codebase                                                                      |
@@ -139,7 +131,7 @@ Welcome to the EDS-Apps wiki!
 
 |Application Name |APRM ID|Wiki                                                                    |Codebase                                                           |
 |:---------------:|:-----:|:----------------------------------------------------------------------:|:-----------------------------------------------------------------:|
-|Nationwide.com   |1940   |[Nationwide.com Wiki](https://github.nwie.net/Nationwide/nw-utility/wiki)|[Nationwide.com Code](https://github.nwie.net/Nationwide/nw-utility)|
+|Nationwide.com   |1940   |[Nationwide.com Wiki](https://github.nwie.net/Nationwide/DGS-EDS-Nationwidecom-Redesign/wiki)|[Nationwide.com Code](https://github.nwie.net/Nationwide/DGS-EDS-Nationwidecom-Redesign)|
 
 </p></details>
 
@@ -147,7 +139,15 @@ Welcome to the EDS-Apps wiki!
 
 |Application Name |APRM ID|Wiki                                                                                             |Codebase                                                                    |
 |:---------------:|:-----:|:---------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------:|
-|NW Utility       |5621   |[NW Utility Wiki](https://github.nwie.net/Nationwide/DGS-EDS-Nationwidecom-Redesign/wiki)|[NW Utility Code](https://github.nwie.net/Nationwide/DGS-EDS-Nationwidecom-Redesign)|
+|NW Utility       |5621   |[NW Utility Wiki](https://github.nwie.net/Nationwide/nw-utility/wiki)|[NW Utility Code](https://github.nwie.net/Nationwide/nw-utility)|
+
+</p></details>
+
+<details><summary>Postal Batch</summary><p>
+
+|Application Name    |APRM ID|Wiki                                                                |Codebase                                                     |
+|:------------------:|:-----:|:--------------------------------------------------------------------:|:-----------------------------------------------------------:|
+|Postal Batch        |6666   |[Postal Batch Wiki](https://github.nwie.net/Nationwide/iam-batch/wiki)|[Postal Batch Code](https://github.nwie.net/Nationwide/iam-batch)|
 
 </p></details>
 
@@ -160,7 +160,7 @@ Welcome to the EDS-Apps wiki!
 
 </p></details>
 
-<details><summary>IAM Web Services</summary><p>
+<details><summary>Professional Locator</summary><p>
 
 |Application Name     |APRM ID|Wiki                                                                                     |Codebase                                                                            |
 |:-------------------:|:-----:|:---------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------:|
