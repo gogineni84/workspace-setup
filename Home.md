@@ -98,11 +98,11 @@ Welcome to the EDS-Apps wiki!
 
 </p></details>
 
-<details><summary>IAM Batch</summary><p>
+<details><summary>Postal Batch</summary><p>
 
-|Application Name |APRM ID|Wiki                                                                |Codebase                                                     |
-|:---------------:|:-----:|:------------------------------------------------------------------:|:-----------------------------------------------------------:|
-|IAM Batch        |6666   |[IAM Batch Wiki](https://github.nwie.net/Nationwide/iam-batch/wiki)|[IAM Batch Code](https://github.nwie.net/Nationwide/iam-batch)|
+|Application Name    |APRM ID|Wiki                                                                |Codebase                                                     |
+|:------------------:|:-----:|:--------------------------------------------------------------------:|:-----------------------------------------------------------:|
+|Postal Batch        |6666   |[Postal Batch Wiki](https://github.nwie.net/Nationwide/iam-batch/wiki)|[Postal Batch Code](https://github.nwie.net/Nationwide/iam-batch)|
 
 </p></details>
 
