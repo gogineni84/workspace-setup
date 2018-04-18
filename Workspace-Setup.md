@@ -17,8 +17,9 @@
 
 <a name="EclipsePlugins"></a>Eclipse Plugins
 ---------------
-- Install the following plugins from the Eclipse Marketplace: [SonarLint](https://marketplace.eclipse.org/content/sonarlint), [Websphere](https://marketplace.eclipse.org/content/ibm-websphere-application-server-v85x-developer-tools), and [Spotbugs](https://marketplace.eclipse.org/content/spotbugs-eclipse-plugin) (formerly Findbugs) 
+- Install the following plugins from the Eclipse Marketplace: [SonarLint](https://marketplace.eclipse.org/content/sonarlint) and [Spotbugs](https://marketplace.eclipse.org/content/spotbugs-eclipse-plugin) (formerly Findbugs) 
 - Install [JD-Eclipse](http://jd.benow.ca/). You will need to download the release zip and add it as an archive repo in Eclipse->Help->Install new software->Add...->Archive...
+- Install [Websphere](https://developer.ibm.com/wasdev/downloads/#asset/tools-IBM_Liberty_Developer_Tools_for_Eclipse_Oxygen). Like JD-Eclipse, you will need to download the zip and add it as an archive repo in Eclipse->Help->Install new software->Add...->Archive...
 
 <a name="EclipseConfiguration"></a>Eclipse Configuration
 ---------------------
