@@ -29,4 +29,4 @@
 
 <a name="EclipseWebsphereDeployIssues"></a>Eclipse Websphere Deploy Issues
 -------------------------------
-- After installing Websphere, add the websphereInstallDirectory/runtimes directory to the Eclipse classpath. To do this, add the following to the eclipse.ini: ```-Djava.endorsed.dirs=<websphereInstallDirectory>/runtimes```
+- After installing Websphere, copy the com.ibm.ws.orb_8.5.*.jar from the websphereInstall/runtimes directory to separate folder to be added to the Eclipse classpath. To do this, add the following to the eclipse.ini: ```-Djava.endorsed.dirs=<ibmOrbJardirectory>```
