@@ -12,20 +12,32 @@
 
 <a name="EclipseSetup"></a>Eclipse Setup
 -------------
-1. Download and install [Eclipse Oxygen](https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/3a/eclipse-java-oxygen-3a-win32-x86_64.zip). 
-2. Once installed, launch it and setup proxy settings under Window->Preferences->search "proxy" to point to your local Cntlm or Nationwide's http-proxy. DO NOT SET THE PROXY FOR SOCKS, IT WILL CAUSE [ISSUES](https://stackoverflow.com/questions/5857499/how-do-i-have-to-configure-the-proxy-settings-so-eclipse-can-download-new-plugin).
+1. Download [Eclipse Oxygen](https://www.eclipse.org/downloads/eclipse-packages/). 
+2. When running the installer, cancel the initial prompts for proxy authentication. When the installer loads, clip the options button (top right) and select Advanced Setup. Select to install the JEE version of Eclipse, then click the proxy setting button in the bottom left. 
+3. Set HTTP and HTTPS proxies only to point to your local Cntlm or Nationwide's http-proxy, then apply and close.
+4. Follow the defaults for the rest of the installer.
+5. Once installed, launch it and setup proxy settings under Window->Preferences->search "proxy" to point to your local Cntlm or Nationwide's http-proxy. DO NOT SET THE PROXY FOR SOCKS, IT WILL CAUSE [ISSUES](https://stackoverflow.com/questions/5857499/how-do-i-have-to-configure-the-proxy-settings-so-eclipse-can-download-new-plugin).
 
 <a name="EclipsePlugins"></a>Eclipse Plugins
 ---------------
-- Install the following plugins from the Eclipse Marketplace: [SonarLint](https://marketplace.eclipse.org/content/sonarlint) and [Spotbugs](https://marketplace.eclipse.org/content/spotbugs-eclipse-plugin) (formerly Findbugs) 
+- Install the following plugins from the Eclipse Marketplace: [SonarLint](https://marketplace.eclipse.org/content/sonarlint), [Websphere](https://marketplace.eclipse.org/content/ibm-websphere-application-server-v85x-developer-tools) and [Spotbugs](https://marketplace.eclipse.org/content/spotbugs-eclipse-plugin) (formerly Findbugs)
+
+**Note: If you have issues connecting to the Eclipse Marketplace, try adding the following lines to your eclipse.ini file:**
+- ```-Dorg.eclipse.ecf.provider.filetransfer.excludeContributors=org.eclipse.ecf.provider.filetransfer.httpclient4```
+- ```-Dorg.eclipse.ecf.provider.filetransfer.retrieve.closeTimeout=30000```
+- ```-Dorg.eclipse.ecf.provider.filetransfer.retrieve.readTimeout=30000```
+
+
 - Install [JD-Eclipse](http://jd.benow.ca/). You will need to download the release zip and add it as an archive repo in Eclipse->Help->Install new software->Add...->Archive...
-- Install [Websphere](https://developer.ibm.com/wasdev/downloads/#asset/tools-IBM_Liberty_Developer_Tools_for_Eclipse_Oxygen). Like JD-Eclipse, you will need to download the zip and add it as an archive repo in Eclipse->Help->Install new software->Add...->Archive...
 
 <a name="EclipseConfiguration"></a>Eclipse Configuration
 ---------------------
-- Clone the [Sonar dev-tools repo](https://github.com/SonarSource/sonar-developer-toolset). Follow the instructions in the README for Eclipse Configure, specifically the Imports section. The Additional Configuration can be ignored at this time.
-- Import the [compiler settings](https://github.nwie.net/Nationwide/EDS-Apps/blob/master/workspace-setup/eclipseWarnings.epf): File->Import...->General->Preferences->select the preferences file from the download link.
+- Import the [compiler settings](https://github.nwie.net/Nationwide/EDS-Apps/blob/master/workspace-setup/eclipsePrefs.epf): File->Import...->General->Preferences->select the preferences file from the download link.
+
+**Note: Most of the settings above are from the [Sonar dev-tools repo](https://github.com/SonarSource/sonar-developer-toolset).**
+
 - Setup the XML formatter: Window->Preferences->search "xml"->select XML->XML Files->Editor->follow the [screenshot](https://github.nwie.net/Nationwide/EDS-Apps/blob/master/workspace-setup/eclipseXmlSettings.png)
+
 **Note: Since this configuration is at a workspace level, this will need to be applied to each workspace you create (maybe one  per app). The fastest way to do this is to set this up once, then export your settings and import them to each additional workspace.**
 
 <a name="EclipseWebsphereDeployIssues"></a>Eclipse Websphere Deploy Issues
