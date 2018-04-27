@@ -12,7 +12,7 @@
 
 <a name="EclipseSetup"></a>Eclipse Setup
 -------------
-1. Download and install [Eclipse Oxygen](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R2/eclipse-inst-win64.exe). 
+1. Download and install [Eclipse Oxygen](https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/3a/eclipse-java-oxygen-3a-win32-x86_64.zip). 
 2. Once installed, launch it and setup proxy settings under Window->Preferences->search "proxy" to point to your local Cntlm or Nationwide's http-proxy.
 
 <a name="EclipsePlugins"></a>Eclipse Plugins
@@ -26,6 +26,7 @@
 - Clone the [Sonar dev-tools repo](https://github.com/SonarSource/sonar-developer-toolset). Follow the instructions in the README for Eclipse Configure, specifically the Imports section. The Additional Configuration can be ignored at this time.
 - Import the [compiler settings](https://github.nwie.net/Nationwide/EDS-Apps/blob/master/workspace-setup/eclipseWarnings.epf): File->Import...->General->Preferences->select the preferences file from the download link.
 - Setup the XML formatter: Window->Preferences->search "xml"->select XML->XML Files->Editor->follow the [screenshot](https://github.nwie.net/Nationwide/EDS-Apps/blob/master/workspace-setup/eclipseXmlSettings.png)
+**Note: Since this configuration is at a workspace level, this will need to be applied to each workspace you create (maybe one  per app). The fastest way to do this is to set this up once, then export your settings and import them to each additional workspace.**
 
 <a name="EclipseWebsphereDeployIssues"></a>Eclipse Websphere Deploy Issues
 -------------------------------
