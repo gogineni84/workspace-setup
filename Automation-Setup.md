@@ -93,7 +93,3 @@ Navigate to **File -> Settings -> Version Control -> GitHub** to set GitHub cred
 4. **Password:** nwie password
 
 5. Click the **Test button** to verify access 
-
-## Link to Github repo for the automation suite
-
-"https://github.nwie.net/Nationwide/Preference-Center-API-Test-Automation"
