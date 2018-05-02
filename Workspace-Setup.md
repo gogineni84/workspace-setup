@@ -15,7 +15,7 @@
 C:\Program Files\Java\jdk1.8.0_172\bin\javaw.exe
 ```
 
-***Note: this will be required for projects that still use JIBX < 1.3.1**
+***Note: this will be required for projects that still use JIBX < 1.3.1, as JAVA_HOME needs to be a 1.7 JDK to build older versions of JIBX.**
 
 <a name="EclipseSetup"></a>Eclipse Setup
 -------------
