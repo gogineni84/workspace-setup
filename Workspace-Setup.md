@@ -8,7 +8,14 @@
 <a name="JavaSetup"></a>Java Setup
 ----------
 1. Download and install [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). This will needed by Eclipse to properly run the SonarLint plugin.
-2. Either set JAVA_HOME to this location of this JDK, or add ```-vm <javaw.exe location>``` to the eclipse.ini file. Do not quote the path if it has spaces, just ensure it's on a line by itself. It should be placed BEFORE the -vmargs line.
+1. Either set JAVA_HOME to this location of this JDK, or add ```-vm <javaw.exe location>```* to the eclipse.ini file. Do not quote the path if it has spaces, just ensure it's on a line by itself. It should be placed BEFORE the -vmargs line. For example:
+
+```
+-vm
+C:\Program Files\Java\jdk1.8.0_172\bin\javaw.exe
+```
+
+***Note: this will be required for projects that still use JIBX < 1.3.1**
 
 <a name="EclipseSetup"></a>Eclipse Setup
 -------------
