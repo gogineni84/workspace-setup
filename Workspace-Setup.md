@@ -5,6 +5,7 @@
 * [Eclipse Plugins](#EclipsePlugins)
 * [Eclipse Configuration](#EclipseConfiguration)
 * [Eclipse Websphere Deploy Issues](#EclipseWebsphereDeployIssues)
+* [IBM Installation Manager](#IBMInstallationManager)
 
 ## <a name="JavaSetup"></a>Java Setup
 
@@ -48,3 +49,15 @@ C:\Program Files\Java\jdk1.8.0_172\bin\javaw.exe
 ## <a name="EclipseWebsphereDeployIssues"></a>Eclipse Websphere Deploy Issues
 
 * After installing Websphere, copy the com.ibm.ws.orb_8.5.\*.jar from the websphereInstall/runtimes directory to separate folder to be added to the Eclipse classpath. To do this, add the following to the eclipse.ini: `-Djava.endorsed.dirs=<ibmOrbJardirectory>`
+
+## <a name="IBMInstallationManager"></a>IBM Installation Manager
+
+ To install Websphere and the Websphere Java SDK, you will first need to install IBM Installation Manager.
+   1. Map to this network drive \\\rationalsw.nwie.net\rationalinstall
+   2. Go to the directory InstallationManager
+   3. Right click on install.exe and select Run As Administrator
+   4. Install IBM installation manager
+   5. Open IBM installation manager and navigate to File > Preferences > Repositories
+   6. Add the repository \\\rationalsw.nwie.net\rationalinstall\RationalSDP\repository.config
+   7. Now when you click Install, Websphere and the Java should be listed as options.
+
