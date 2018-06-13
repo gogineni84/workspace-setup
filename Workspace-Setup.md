@@ -34,6 +34,10 @@ C:\Program Files\Java\jdk1.8.0_172\bin\javaw.exe
 * `-Dorg.eclipse.ecf.provider.filetransfer.retrieve.closeTimeout=30000`
 * `-Dorg.eclipse.ecf.provider.filetransfer.retrieve.readTimeout=30000`
 
+- If you are still having issues with the Eclipse Marketplace, you can download the zip file from these provided links and add it as an archive repo in Eclipse->Help->Install new software->Add...->Archive...
+     - [SonarLint](https://github.com/SonarSource/sonarlint-eclipse/releases)
+     - [Websphere](https://developer.ibm.com/wasdev/downloads/#asset/tools-IBM_Liberty_Developer_Tools_for_Eclipse_Oxygen)
+
 - Install [JD-Eclipse](http://jd.benow.ca/). You will need to download the release zip and add it as an archive repo in Eclipse->Help->Install new software->Add...->Archive...
 
 ## <a name="EclipseConfiguration"></a>Eclipse Configuration
