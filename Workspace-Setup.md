@@ -48,7 +48,9 @@ C:\Program Files\Java\jdk1.8.0_172\bin\javaw.exe
 
 * Setup the XML formatter: Window->Preferences->search "xml"->select XML->XML Files->Editor->follow the [screenshot](https://github.nwie.net/Nationwide/EDS-Apps/blob/master/workspace-setup/eclipseXmlSettings.png)
 
-**Note: Since this configuration is at a workspace level, this will need to be applied to each workspace you create (maybe one per app). The fastest way to do this is to set this up once, then export your settings and import them to each additional workspace.**
+> **Note:** Since this configuration is at a workspace level, this will need to be applied to each workspace you create (maybe one per app). The fastest way to do this is to set this up once, then export your settings and import them to each additional workspace.
+
+> **Note:** You can enable _Format/Organize On Save_ functionality via: Window -> Preferences -> Java -> Editor -> Save Actions.
 
 ## <a name="EclipseWebsphereDeployIssues"></a>Eclipse Websphere Deploy Issues
 
