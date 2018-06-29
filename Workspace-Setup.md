@@ -28,8 +28,8 @@ C:\Program Files\Java\jdk1.8.0_172\bin\javaw.exe
 ## Eclipse Plugins
 
 * Install the following plugins by downloading the zip file from these provided links and add it as an archive repo in Eclipse->Help->Install new software->Add...->Archive...
-     * [SonarLint](https://github.com/SonarSource/sonarlint-eclipse/releases)
-     * [Websphere](https://developer.ibm.com/wasdev/downloads/#asset/tools-IBM_Liberty_Developer_Tools_for_Eclipse_Oxygen)
+     * [SonarLint](https://github.com/SonarSource/sonarlint-eclipse/releases) - Click the Tags tab, then download the latest version's zip.
+     * [Websphere](https://developer.ibm.com/wasdev/downloads/#asset/tools-IBM_Liberty_Developer_Tools_for_Eclipse_Oxygen) - Click the Download button next to "WebSphere Developer Tools for WebSphere® Application Server Liberty and WebSphere® Application Server traditional"
 
 * Optional: Install the following plugins from the Eclipse Marketplace: [Spotbugs](https://marketplace.eclipse.org/content/spotbugs-eclipse-plugin) (formerly Findbugs) and [Spark Builder Generator](https://marketplace.eclipse.org/content/spark-builder-generator)
   * Spark Builder Generator is a tool that will convert POJOs to use the builder pattern by clicking the builder icon from the Eclipse toolbar. This allows for the following syntax when creating objects: ```object.builder().withFieldA("fieldA").withFieldB("fieldB").build()```. This results in a bit more readable code when creating objects (instead of unwieldy constructors or lines and lines of setters).
