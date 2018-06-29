@@ -55,7 +55,9 @@ C:\Program Files\Java\jdk1.8.0_172\bin\javaw.exe
 
 **Note: Most of the settings above are from the [Sonar dev-tools repo](https://github.com/SonarSource/sonar-developer-toolset).**
 
-* Setup the XML formatter: Window->Preferences->search "xml"->select XML->XML Files->Editor->follow the [screenshot](https://github.nwie.net/Nationwide/EDS-Apps/blob/master/workspace-setup/eclipseXmlSettings.png)
+* Setup the XML formatter: Window->Preferences->search "xml"->select XML->XML Files->Editor->follow the screenshot below:
+
+![XML Formatting](./workspace-setup-images/eclipseXmlSettings.png)
 
 * Optional: setup save actions:
   * In Windows->Preferences, search for "save" and select Java->Editor->Save Actions...
