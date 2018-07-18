@@ -3,7 +3,7 @@
 ### This page will provide guidelines for teams / individuals onboarding to Identity Management apps.
 
 ###
-### Communictaions
+### Communications
       - Rocket Chat
       - Scrum of Scrums
 
