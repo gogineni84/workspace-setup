@@ -7,7 +7,7 @@ The following values should be checked:
 
     -OR-
 
-* ECIF source system should be one of the following: "CL Policy Center", "CL Direct PolicyCenter", "CL Direct PolicyCenter Account", "CL Direct BillingCenter"
+* ECIF source system should be one of the following: "CL Policy Center", "CL Direct PolicyCenter", "CL Direct PolicyCenter Account", "CL Direct BillingCenter", "FLEX Billing"
 
 ## Determining Related PAK Commercial Accounts in ECIF
 The following values should be checked:
