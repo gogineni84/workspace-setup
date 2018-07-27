@@ -75,6 +75,7 @@ C:\Program Files\Java\jdk1.8.0_172\bin\javaw.exe
   ![Unnecessary Code](./workspace-setup-images/save-actions-unnecessary-code.png)
 
 > **Note:** Since this configuration is at a workspace level, this will need to be applied to each workspace you create (maybe one per app).
+> **Note:** if the `@formatter:on|off` tag is not recognized automatically by eclipse, you can tell it to recognize those tags, see [here](https://stackoverflow.com/a/3353765/10144781).
 
 ## Eclipse Websphere Deploy Issues
 
