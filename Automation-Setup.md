@@ -5,6 +5,7 @@ EDS Automation suites run on Ruby and JRuby. Please refer to [TSB Approved](http
 ## Installing Ruby
 
 * Install the latest version of [Ruby](https://rubyinstaller.org/)
+* Additional installation help [here](https://pages.github.nwie.net/Nationwide/nw-dev-portal/content/articles/ruby_24_upgrade.html)
 * In a command prompt, validate your installation
 
 ```console
