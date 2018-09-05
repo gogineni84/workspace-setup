@@ -81,4 +81,4 @@ Navigate to **File -> Settings -> Editor -> Inspections**
 
 ## Optional Eclipse Keymapping
 
-![Optional Keymapping for very particular and grumpy developers](EDS-Apps/images/rubymine-keymap.png)
+![Optional Keymapping for very particular and grumpy developers](https://github.nwie.net/Nationwide/EDS-Apps/blob/master/images/rubymine-keymap.png)
