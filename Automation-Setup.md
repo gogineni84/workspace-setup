@@ -8,14 +8,14 @@ EDS Automation suites run on Ruby and JRuby. Please refer to [TSB Approved](http
 * In a command prompt, validate your installation
 
 ```console
-ruby -v
+$ ruby -v
 ```
 
 * Configure you `gem` commands
 
 ```console
-gem sources -a http://repo.nwie.net/nexus/content/groups/rubygems/
-gem sources -r https://rubygems.org
+$ gem sources -a http://repo.nwie.net/nexus/content/groups/rubygems/
+$ gem sources -r https://rubygems.org
 ```
 
 * Open terminal as an admin and run `gem install bundler ruby-debug-ide ruby-debug-base rubycritic rubocop`
@@ -27,14 +27,14 @@ gem sources -r https://rubygems.org
 * In a command prompt, validate your installation
 
 ```console
-jruby -v
+$ jruby -v
 ```
 
 * Configure you `gem` commands
 
 ```console
-jgem sources -a http://repo.nwie.net/nexus/content/groups/rubygems/
-jgem sources -r https://rubygems.org
+$ jgem sources -a http://repo.nwie.net/nexus/content/groups/rubygems/
+$ jgem sources -r https://rubygems.org
 ```
 
 * Open terminal as an admin and run `jgem install bundler ruby-debug-ide ruby-debug-base rubycritic rubocop`
