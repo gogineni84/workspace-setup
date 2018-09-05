@@ -74,5 +74,11 @@ Navigate to **File -> Settings -> Version Control -> GitHub** to set GitHub cred
 Navigate to **File -> Settings -> Editor -> Inspections**
 
 1. Click the *Ruby* dropdown
+![Inspection Settings](https://github.nwie.net/Nationwide/EDS-Apps/blob/master/images/rubocop-configuration.png)
 2. Uncheck all Inspections execept for *RuboCop*
+![](https://github.nwie.net/Nationwide/EDS-Apps/blob/master/images/rubocop-configuration-2.png)
 3. Click Apply and OK
+
+## Optional Eclipse Keymapping
+
+![Optional Keymapping for very particular and grumpy developers](EDS-Apps/images/rubymine-keymap.png)
