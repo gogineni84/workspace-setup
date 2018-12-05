@@ -22,7 +22,7 @@ C:\Program Files\Java\jdk1.8.0_172\bin\javaw.exe
 
 ## Eclipse Setup
 
-1.  Download and install [Eclipse Photon for Java EE Developers]https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2018-09/R/eclipse-jee-2018-09-win32-x86_64.zip).
+1.  Download and install [Eclipse Photon for Java EE Developers](https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2018-09/R/eclipse-jee-2018-09-win32-x86_64.zip).
 2.  Once installed, launch it and setup proxy settings under Window->Preferences->search "proxy" to point to your local Cntlm or Nationwide's http-proxy. DO NOT SET THE PROXY FOR SOCKS, IT WILL CAUSE [ISSUES](https://stackoverflow.com/questions/5857499/how-do-i-have-to-configure-the-proxy-settings-so-eclipse-can-download-new-plugin).
 
 ### Updating Eclipse Major Versions
