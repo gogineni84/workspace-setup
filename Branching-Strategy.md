@@ -30,10 +30,10 @@
 
 ### Project Branches
   **Name:** 
-  + *convention:* **project/[short-description]**
+  + *convention:* **project_[short-description]**
   + *example:* 
-    1. **project/preferences-phase-2**
-    2. **project/postal-mail-reduction**
+    1. **project_preferences-phase-2**
+    2. **project_postal-mail-reduction**
   
   **Purpose:** Represents all development for a single project
 
@@ -44,10 +44,10 @@
 
 ### Release Branches
   **Name:** 
-  + *convention:* **release/[year]/[number]**
+  + *convention:* **release_[year]_[number]**
   + *example:* 
-    1. **release/2017/9.0**
-    2. **release/2017/10.2**
+    1. **release_2017_9.0**
+    2. **release_2017_10.2**
   
   **Purpose:** Represents release-ready code (which could be multiple projects that have all been merged into **[develop](#develop)**)
 
@@ -60,11 +60,11 @@
 ### Feature Branches
   **Name:** 
   + *convention:* 
-    1. **feature/rtc/[RTC number]**
-    2. **defect/qc/[QC number]**
+    1. **feature_rtc_[RTC number]**
+    2. **defect_qc_[QC number]**
   + *example:* 
-    1. **feature/rtc/951023**
-    2. **defect/qc/513772**
+    1. **feature_rtc_951023**
+    2. **defect_qc_513772**
   
   **Purpose:** Represents development of a single story, tech, or defect card.
 
@@ -80,8 +80,8 @@
 
 ### Hotfix Branches
   **Name:** 
-  + *convention:* **hotfix/[short-description]**
-  + *example:* **hotfix/claims-link-change**
+  + *convention:* **hotfix_[short-description]**
+  + *example:* **hotfix_claims-link-change**
   
   **Purpose:** Represents development of non-story/tech/defect card work (a small refactor or a quick fix)
 
