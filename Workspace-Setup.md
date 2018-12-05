@@ -2,6 +2,7 @@
 
 - [Java Setup](#java-setup)
 - [Eclipse Setup](#eclipse-setup)
+     - [Updating Eclipse Major Versions](#updating-eclipse-major-versions)
 - [Eclipse Plugins](#eclipse-plugins)
 - [Eclipse Configuration](#eclipse-configuration)
 - [Eclipse Websphere Deploy Issues](#eclipse-websphere-deploy-issues)
@@ -21,19 +22,29 @@ C:\Program Files\Java\jdk1.8.0_172\bin\javaw.exe
 
 ## Eclipse Setup
 
-1.  Download and install [Eclipse Oxygen](https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/3a/eclipse-jee-oxygen-3a-win32-x86_64.zip&mirror_id=492).
+1.  Download and install [Eclipse Photon for Java EE Developers]https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2018-09/R/eclipse-jee-2018-09-win32-x86_64.zip).
 2.  Once installed, launch it and setup proxy settings under Window->Preferences->search "proxy" to point to your local Cntlm or Nationwide's http-proxy. DO NOT SET THE PROXY FOR SOCKS, IT WILL CAUSE [ISSUES](https://stackoverflow.com/questions/5857499/how-do-i-have-to-configure-the-proxy-settings-so-eclipse-can-download-new-plugin).
+
+### Updating Eclipse Major Versions
+
+Option 1: 
+1. To update Eclipse from one major version to another (e.g. - from Oxygen to Photon), it's best to first do all available updates within the Help->Check for Updates menu item. It may be best to do this outside the Nationwide network because of corporate firewall restrictions and timeouts due to the corporate proxy. 
+2. Also, it's recommended to remove any sites that Eclipse shows as "currently offline" in the Window->Preferences->Install/Update->Available Software Sites menu. To see the offline status, simply click on a given site, and Eclipse will display a warning message that the site appears to be offline. Either removing or disabling that site will relieve a lot of the wait time associated with the Check for Updates. 
+3. After all updates are applied and Eclipse is restarted, search Google for the update site for whichever version of Eclipse being migrated to (e.g. - Photon is http://download.eclipse.org/releases/photon) and add this site to the Available Software Sites. Then, run the Check for Updates again and install all available updates.
+
+Option 2: 
+1. Simply install the latest version plus all of the plugins and configuration below. This is definitely cumbersome in its own right, but so is updating a version of Eclipse in place.
 
 ## Eclipse Plugins
 
-* Install the following plugins by downloading the zip file from these provided links and add it as an archive repo in Eclipse->Help->Install new software->Add...->Archive...
-     * [SonarLint](https://github.com/SonarSource/sonarlint-eclipse/releases) - Click the Tags tab, then download the latest version's zip.
-     * [Websphere](https://developer.ibm.com/wasdev/downloads/#asset/tools-IBM_Liberty_Developer_Tools_for_Eclipse_Oxygen) - Click the Download button next to "WebSphere Developer Tools for WebSphere® Application Server Liberty and WebSphere® Application Server traditional"
+Install the following plugins by downloading the zip file from these provided links and add it as an archive repo in Eclipse->Help->Install new software->Add...->Archive...
+* [SonarLint](https://github.com/SonarSource/sonarlint-eclipse/releases) - Click the Tags tab, then download the latest version's zip.
+* [Websphere](https://developer.ibm.com/wasdev/downloads/liberty-profile-using-eclipse/) - Click the Download WDT update site for Eclipse Photon
 
-* Optional: Install the following plugins from the Eclipse Marketplace: [Spotbugs](https://marketplace.eclipse.org/content/spotbugs-eclipse-plugin) (formerly Findbugs) and [Spark Builder Generator](https://marketplace.eclipse.org/content/spark-builder-generator)
-  * Spark Builder Generator is a tool that will convert POJOs to use the builder pattern by clicking the builder icon from the Eclipse toolbar. This allows for the following syntax when creating objects: ```object.builder().withFieldA("fieldA").withFieldB("fieldB").build()```. This results in a bit more readable code when creating objects (instead of unwieldy constructors or lines and lines of setters).
+Optional: Install the following plugins from the Eclipse Marketplace: [Spotbugs](https://marketplace.eclipse.org/content/spotbugs-eclipse-plugin) (formerly Findbugs), [DarkestDark](https://marketplace.eclipse.org/content/darkest-dark-theme-devstyle) if you like dark themes, and [Spark Builder Generator](https://marketplace.eclipse.org/content/spark-builder-generator)
+* Spark Builder Generator is a tool that will convert POJOs to use the builder pattern by clicking the builder icon from the Eclipse toolbar. This allows for the following syntax when creating objects: ```object.builder().withFieldA("fieldA").withFieldB("fieldB").build()```. This results in a bit more readable code when creating objects (instead of unwieldy constructors or lines and lines of setters).
   
-  ![Spark Builder Button](./workspace-setup-images/spark-builder-button.png)
+![Spark Builder Button](./workspace-setup-images/spark-builder-button.png)
 
 **Note: If you have issues connecting to the Eclipse Marketplace, try adding the following lines to your eclipse.ini file:**
 
@@ -43,35 +54,35 @@ C:\Program Files\Java\jdk1.8.0_172\bin\javaw.exe
 -Dorg.eclipse.ecf.provider.filetransfer.retrieve.readTimeout=30000
 ```
 
-* Optional: Install [JD-Eclipse](http://jd.benow.ca/). You will need to download the release zip and add it as an archive repo in Eclipse->Help->Install new software->Add...->Archive...
-  * This is a tool for decompiling code when source isn't available in Maven. In Window->Preferences, search for "assoc" and select General->Editors->File Associations. Set JD Class Viewer as the default editor:
+Optional: Install [JD-Eclipse](http://jd.benow.ca/). You will need to download the release zip and add it as an archive repo in Eclipse->Help->Install new software->Add...->Archive...
+* This is a tool for decompiling code when source isn't available in Maven. In Window->Preferences, search for "assoc" and select General->Editors->File Associations. Set JD Class Viewer as the default editor:
 
 ![JD Eclipse Setup](./workspace-setup-images/jd-eclipse-setup.png)
 
 ## Eclipse Configuration
 
-* Import the [compiler settings](https://github.nwie.net/Nationwide/EDS-Apps/blob/master/workspace-setup/eclipsePrefs.epf): File->Import...->General->Preferences->select the preferences file from the download link.
+Import the [compiler settings](https://github.nwie.net/Nationwide/EDS-Apps/blob/master/workspace-setup/eclipsePrefs.epf): File->Import...->General->Preferences->select the preferences file from the download link.
 
 **Note: Most of the settings above are from the [Sonar dev-tools repo](https://github.com/SonarSource/sonar-developer-toolset).**
 
-* Setup the XML formatter: Window->Preferences->search "xml"->select XML->XML Files->Editor->follow the screenshot below:
+Setup the XML formatter: Window->Preferences->search "xml"->select XML->XML Files->Editor->follow the screenshot below:
 
 ![XML Formatting](./workspace-setup-images/eclipseXmlSettings.png)
 
-* Optional: setup save actions:
-  * In Windows->Preferences, search for "save" and select Java->Editor->Save Actions...
+Optional: setup save actions:
+* In Windows->Preferences, search for "save" and select Java->Editor->Save Actions...
 
-  ![Save Actions](./workspace-setup-images/save-actions.png)
+![Save Actions](./workspace-setup-images/save-actions.png)
 
-  * Click configure... and configure each tab per the screenshots below (no changes necessary for Member Accesses):
+* Click configure... and configure each tab per the screenshots below (no changes necessary for Member Accesses):
 
-  ![Code Organizing](./workspace-setup-images/save-actions-code-organizing.png)
+![Code Organizing](./workspace-setup-images/save-actions-code-organizing.png)
 
-  ![Code Style](./workspace-setup-images/save-actions-code-style.png)
+![Code Style](./workspace-setup-images/save-actions-code-style.png)
 
-  ![Missing Code](./workspace-setup-images/save-actions-missing-code.png)
+![Missing Code](./workspace-setup-images/save-actions-missing-code.png)
 
-  ![Unnecessary Code](./workspace-setup-images/save-actions-unnecessary-code.png)
+![Unnecessary Code](./workspace-setup-images/save-actions-unnecessary-code.png)
 
 > **Note:** Since this configuration is at a workspace level, this will need to be applied to each workspace you create (maybe one per app).
 > 
@@ -79,7 +90,7 @@ C:\Program Files\Java\jdk1.8.0_172\bin\javaw.exe
 
 ## Eclipse Websphere Deploy Issues
 
-* After installing Websphere, copy the com.ibm.ws.orb_8.5.\*.jar from the websphereInstall/runtimes directory to separate folder to be added to the Eclipse classpath. To do this, add the following to the eclipse.ini: `-Djava.endorsed.dirs=<ibmOrbJardirectory>`
+After installing Websphere, copy the com.ibm.ws.orb_8.5.\*.jar from the websphereInstall/runtimes directory to separate folder to be added to the Eclipse classpath. To do this, add the following to the eclipse.ini: `-Djava.endorsed.dirs=<ibmOrbJardirectory>`
 
 ## IBM Installation Manager
 
