@@ -8,3 +8,6 @@ A: From the bin folder in your Websphere installation directory you can run the 
 
 ### Q: How can I retrieve an up-to-date SSL certificate?
 A: Go the admin console and navigate to security -> SSL certificate and key management on the left. Then on the right side of the page go to Key stores and certificates, then click NodeDefaultTrustStore. Then click Signer certificates, and click the retrieve from port button. Provide the host name and the secure port number of 443, then provide an alias of you choosing and click retrieve signer information. Click apply and save.
+
+### Q: What are some other general troubleshooting tips?
+A: If none of the above solutions help fix your problem, stopping the server and clearing the temp directory for that profile and restarting solves some issues.
